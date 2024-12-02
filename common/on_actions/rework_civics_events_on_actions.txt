@@ -1,0 +1,20 @@
+on_game_start_country = {
+    events = {
+        rework_civics.1
+        special_planet_event.0
+    }
+}
+
+on_modification_complete = {
+    events = {
+        rework_civics.1
+            rework_civics.2
+    }
+}
+
+on_yearly_pulse = {
+    events = {
+        rework_civics.1
+            rework_civics.2
+    }
+}

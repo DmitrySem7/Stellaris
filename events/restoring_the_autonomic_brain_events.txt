@@ -1,0 +1,730 @@
+namespace = restoring_the_autonomic_brain_events
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.1
+    title = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = collect_the_alloy
+        hidden_effect = {
+            add_resource = { alloys = 1500 }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_2"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+    option = {
+        name = prepare_to_mine_minerals
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            set_country_flag = addmineral1rework
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_2"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.2
+    title = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_2
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = add_society_and_physics_1
+        hidden_effect = {
+            set_country_flag = addsocietyphysics
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_3"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+    option = {
+        name = add_society_and_engineering_1
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            set_country_flag = addsocietyengineering
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_3"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.3
+    title = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_3
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = optimize_production
+        hidden_effect = {
+            add_modifier = {
+                modifier = optimize_production_modifier
+                days = -1
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "exploration_of_hidden_deposits_toxic"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+
+    }
+    option = {
+        name = improve_drone_conditions
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = improve_drone_conditions_modifier
+                days = -1
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "exploration_of_hidden_deposits_toxic"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+}
+
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.4
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    immediate = {
+        solar_system = {
+            every_system_planet = {
+                if = {
+                    limit = {
+                        is_planet_class = pc_toxic
+                    }
+                    create_archaeological_site = rework_restoring_the_autonomic_brain1
+                }
+            }
+
+        }
+        capital_scope = {
+            enable_special_project = {
+                name = "temporary_increase_in_contentment"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.5
+    title = temporary_increase_in_contentment
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = temporary_increase_in_contentment
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = temporary_increase_in_contentment
+                days = 720
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_4"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+    option = {
+        name = addMinAll30001200
+        hidden_effect = {
+            add_resource = {
+                minerals = 3000
+                alloys = 1200
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_4"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.6
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+            set_country_flag = addenergytech1
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_5"
+                    location = this
+                    owner = root
+                }
+            }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.7
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = addmineralstech1
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_6"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.8
+    title = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_6
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = upDronWay1
+        hidden_effect = {
+            owner = {
+                ROBOT_species_trait_picks_add = 4
+                ROBOT_species_trait_points_add = 4
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_7"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = upDronWay2
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = upDronWay2
+                days = -1
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_7"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.9
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = stability_off1
+        add_modifier = {
+            modifier = stability1
+            days = -1
+        }
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_8"
+                location = this
+                owner = root
+            }
+        }
+    }
+
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.10
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = upGr1
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_9"
+                location = this
+                owner = root
+            }
+        }
+    }
+
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.11
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = optimizationSpec1
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_10"
+                location = this
+                owner = root
+            }
+        }
+    }
+
+}
+
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.12
+    title = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_10
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_10_1
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            set_country_flag = addTrig1
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_11"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_10_2
+        hidden_effect = {
+            set_country_flag = addTrig2
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_11"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_10_3
+        hidden_effect = {
+            set_country_flag = addTrig3
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_11"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+}
+
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.13
+    title = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_11
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_11_1
+        hidden_effect = {
+            add_resource = {
+                alloys = 6000
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_10"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_11_2
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            set_country_flag = workSpace
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_12"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+}
+
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.14
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = achTech1
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_13"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.15
+    title = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_13
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_13_1
+        hidden_effect = {
+            add_resource = {
+                alloys = -5000
+                minor_artifacts = -300
+            }
+            set_country_flag = bigSmoke
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_14"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_13_2
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = five_year_plan_science
+                days = 1800
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_14"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.16
+    title = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_14
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_14_1
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = techstarbase1
+                days = -1
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_15"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_14_2
+        hidden_effect = {
+            add_modifier = {
+                modifier = techmegafast1
+                days = -1
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_15"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_14_3
+        hidden_effect = {
+            add_modifier = {
+                modifier = techmegastr1
+                days = -1
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_15"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+}
+
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.17
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = addMiArt1
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_16"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.18
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = alloysfactory
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_17"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.19
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = stabilityflag2
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_17"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.20
+    title = preparation_for_perestroika
+    hide_window = no
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        name = preparation_for_perestroika_1
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = preparation_for_perestroika_1
+                days = 2440
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_18"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = preparation_for_perestroika_2
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = preparation_for_perestroika_2
+                days = 1440
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_18"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+
+    option = {
+        name = preparation_for_perestroika_3
+        ai_chance  = {
+            factor = 100
+        }
+        hidden_effect = {
+            add_modifier = {
+                modifier = preparation_for_perestroika_3
+                days = 1440
+            }
+            capital_scope = {
+                enable_special_project = {
+                    name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_18"
+                    location = this
+                    owner = root
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.21
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = ancCor1
+        set_country_flag = ancTit1
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_19"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.22
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = extractEnMin
+        capital_scope = {
+            enable_special_project = {
+                name = "dasfwefq4141dqs51"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.23
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = perfectStructures
+        set_country_flag = addMiArt3
+    }
+}
+
+country_event = {
+    id = restoring_the_autonomic_brain_events.24
+    hide_window = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+    immediate = {
+        set_country_flag = addMiArt2
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_20"
+                location = this
+                owner = root
+            }
+        }
+    }
+}

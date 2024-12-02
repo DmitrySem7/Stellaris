@@ -1,0 +1,114 @@
+
+
+ancient_drone_specialist_rework = {
+    is_capped_by_modifier = no
+
+    base_buildtime = 250
+
+    show_on_uncolonized = {
+        uses_district_set = ancient_drons_world
+    }
+
+    resources = {
+        category = planet_districts_cities
+        cost = {
+            alloys = 500
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+
+    potential = {
+        uses_district_set = ancient_drons_world
+        exists = owner
+    }
+    planet_modifier = {
+        planet_housing_add = 6
+        planet_max_buildings_add = 0.5
+        job_ancient_drone_specialist_rework_add = 3
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                has_country_flag = optimizationSpec1
+            }
+        }
+        job_ancient_drone_specialist_rework_add = 1
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                has_country_flag = workSpace
+            }
+        }
+        job_ancient_drone_specialist_rework_add = 1
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                has_country_flag = bigSmoke
+            }
+        }
+        job_ancient_drone_specialist_rework_add = 1
+    }
+
+    ai_estimate_without_unemployment = yes
+    additional_ai_weight = 200
+    ai_weight_coefficient = 1.2
+}
+
+ancient_drone_worker_rework = {
+    is_capped_by_modifier = no
+
+    base_buildtime = 250
+
+    show_on_uncolonized = {
+        uses_district_set = ancient_drons_world
+    }
+
+    resources = {
+        category = planet_districts_cities
+        cost = {
+            alloys = 500
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+
+    potential = {
+        uses_district_set = ancient_drons_world
+        exists = owner
+    }
+    planet_modifier = {
+        planet_housing_add = 2
+        planet_max_buildings_add = 0.5
+        job_ancient_drone_worker_rework_add = 1
+    }
+
+    triggered_planet_modifier = {
+
+        job_ancient_drone_worker_rework_add = 1
+    }
+
+    triggered_planet_modifier = {
+
+        job_ancient_drone_worker_rework_add = 1
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = {
+                has_country_flag = bigSmoke
+            }
+        }
+        job_ancient_drone_worker_rework_add = 2
+    }
+
+    ai_estimate_without_unemployment = yes
+    additional_ai_weight = 200
+    ai_weight_coefficient = 1.2
+}

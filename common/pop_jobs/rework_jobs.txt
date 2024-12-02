@@ -1,0 +1,185 @@
+
+
+environmental_development_consultant = {
+    category = ruler
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_ranger_embassy
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+
+    resources = {
+        category = planet_researchers
+        produces = {
+            society_research = 8
+            unity = 6
+        }
+        upkeep = {
+            food = 3
+        }
+
+    }
+}
+
+
+ancient_drone_specialist_rework = {
+    category = specialist
+    condition_string = SPECIALIST_JOB_TRIGGER
+    building_icon = building_ranger_embassy
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            NOT = {
+                owner = {
+                    has_country_flag = stabilityflag2
+                }
+            }
+        }
+        planet_stability_add = -1.5
+    }
+
+    resources = {
+        category = planet_researchers
+        produces = {
+            physics_research = 1
+            engineering_research = 1
+            society_research = 1
+        }
+        upkeep = {
+            alloys = 3
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addsocietyphysics
+                }
+            }
+            society_research = 1
+            physics_research = 1
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addsocietyengineering
+                }
+            }
+            society_research = 1
+            engineering_research = 1
+        }
+
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addTrig1
+                }
+            }
+            engineering_research = 2
+        }
+
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addTrig2
+                }
+            }
+            physics_research = 2
+        }
+
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addTrig3
+                }
+            }
+            society_research = 2
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = perfectStructures
+                }
+            }
+            engineering_research = 1
+            society_research = 1
+            physics_research = 1
+        }
+    }
+}
+
+
+ancient_drone_worker_rework = {
+    category = worker
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_ranger_embassy
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+    triggered_planet_modifier = {
+        potential = {
+            NOT = {
+                owner = {
+                    has_country_flag = upGr1
+                }
+            }
+        }
+        planet_stability_add = -1.5
+    }
+    resources = {
+        category = planet_requisitioned_energy
+        produces = {
+            energy = 5
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addmineral1rework
+                }
+            }
+            minerals = 1
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addenergytech1
+                }
+            }
+            energy = 1
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = extractEnMin
+                }
+            }
+            energy = 2
+            minerals = 4
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addmineralstech1
+                }
+            }
+            minerals = 1
+        }
+        upkeep = {
+            alloys = 1
+        }
+
+    }
+}

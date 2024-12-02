@@ -1,0 +1,337 @@
+
+
+building_ranger_embassy = {
+    base_buildtime = 360
+    category = unity
+    base_cap_amount = 1
+
+    potential = {
+        exists = owner
+        owner = {
+            has_origin = origin_empire_of_rangers
+        }
+    }
+
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            NOT = {
+                has_origin = origin_empire_of_rangers
+            }
+        }
+    }
+
+    convert_to = {
+        building_bureaucratic_1
+        building_temple
+        building_hive_node
+    }
+
+    country_modifier = {
+        country_resource_max_minor_artifacts_add = 1000
+    }
+
+    planet_modifier = {
+        job_environmental_development_consultant_add = 4
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            food = 1000
+        }
+        upkeep = {
+            food = 30
+        }
+    }
+
+    upgrades = {
+        building_ranger_embassy_2
+    }
+}
+
+building_ranger_embassy_2 = {
+    base_buildtime = 720
+    can_build = no
+    category = unity
+
+    prerequisites = {
+        tech_empire_of_rangers_1
+    }
+
+    potential = {
+        owner = {
+            has_origin = origin_empire_of_rangers
+        }
+    }
+
+    destroy_trigger = {
+
+            owner = {
+                NOT = {
+                    has_origin = origin_empire_of_rangers
+
+                }
+            }
+
+
+    }
+
+    convert_to = {
+        building_bureaucratic_1
+        building_temple
+        building_hive_node
+    }
+
+    country_modifier = {
+        country_resource_max_minor_artifacts_add = 1000
+    }
+
+    planet_modifier = {
+        job_environmental_development_consultant_add = 8
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            food = 2000
+        }
+        upkeep = {
+            food = 40
+        }
+    }
+    upgrades = {
+        building_ranger_embassy_3
+    }
+}
+
+building_ranger_embassy_3 = {
+    base_buildtime = 1080
+    can_build = no
+    category = unity
+
+    prerequisites = {
+        tech_empire_of_rangers_2
+    }
+
+    potential = {
+        owner = {
+            has_origin = origin_empire_of_rangers
+        }
+    }
+
+    destroy_trigger = {
+
+        owner = {
+            NOT = {
+                has_origin = origin_empire_of_rangers
+
+            }
+        }
+
+
+    }
+
+    convert_to = {
+        building_bureaucratic_1
+        building_temple
+        building_hive_node
+    }
+
+    country_modifier = {
+        country_resource_max_minor_artifacts_add = 2000
+        country_resource_max_add = 5000
+        trade_value_mult = 0.10
+    }
+
+    planet_modifier = {
+        job_environmental_development_consultant_add = 12
+        job_merchant_add=2
+        planet_amenities_add = 10
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            food = 15000
+        }
+        upkeep = {
+            food = 100
+        }
+    }
+}
+
+
+ancient_dron_struct1_1 = {
+    base_buildtime = 180
+    category = research
+    base_cap_amount = 1
+
+    prerequisites = {
+        tech_ancient_dron_struct1_1
+    }
+
+
+
+    resources = {
+        category = planet_buildings
+        produces = {
+            physics_research = 30
+            engineering_research = 30
+            society_research = 30
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addMiArt1
+                }
+            }
+            physics_research = 15
+            engineering_research = 15
+            society_research = 15
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addMiArt2
+                }
+            }
+            physics_research = 15
+            engineering_research = 15
+            society_research = 15
+        }
+        cost = {
+            alloys = 500
+        }
+        upkeep = {
+            alloys = 1
+        }
+    }
+}
+
+ancient_dron_struct1_2 = {
+    base_buildtime = 180
+    category = army
+    base_cap_amount = 1
+
+    prerequisites = {
+        tech_ancient_dron_struct1_2
+    }
+
+    country_modifier = {
+        country_naval_cap_add = 30
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 500
+        }
+        upkeep = {
+            alloys = 1
+        }
+    }
+}
+
+ancient_dron_struct1_3 = {
+    base_buildtime = 180
+    category = research
+    base_cap_amount = 1
+
+    prerequisites = {
+        tech_ancient_dron_struct1_3
+    }
+
+    resources = {
+        category = planet_buildings
+        produces = {
+            minor_artifacts = 0.5
+        }
+
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addMiArt1
+                }
+            }
+            minor_artifacts = 0.5
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addMiArt2
+                }
+            }
+            minor_artifacts = 0.5
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_country_flag = addMiArt3
+                }
+            }
+            minor_artifacts = 1
+        }
+        cost = {
+            alloys = 500
+        }
+        upkeep = {
+            alloys = 1
+        }
+    }
+}
+
+ancient_dron_struct1_4 = {
+    base_buildtime = 180
+    category = unity
+    base_cap_amount = 1
+
+    prerequisites = {
+        tech_ancient_dron_struct1_4
+    }
+
+    planet_modifier = {
+        planet_amenities_add = 15
+        planet_resettlement_unemployed_mult = 0.5
+        planet_pop_assembly_mult = 0.25
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 500
+        }
+        upkeep = {
+            alloys = 4
+        }
+    }
+}
+
+alloysfactory = {
+    base_buildtime = 180
+    category = manufacturing
+
+    potential = {
+        owner = {
+            has_country_flag = alloysfactory
+        }
+    }
+
+    planet_modifier = {
+        planet_metallurgists_produces_mult = 0.15
+        planet_artisans_produces_mult = 0.15
+    }
+    inline_script = {
+        script = jobs/foundry_add
+        AMOUNT = 8
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 1500
+        }
+        upkeep = {
+            alloys = 1
+        }
+    }
+}

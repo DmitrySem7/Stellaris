@@ -1,0 +1,133 @@
+
+
+tech_empire_of_rangers_1 = {
+    cost  =  5000
+    area = engineering
+    weight = 200
+    tier = 2
+    category  =  {  industry  }
+
+    potential = {
+        has_origin = origin_empire_of_rangers
+    }
+}
+
+tech_empire_of_rangers_2 = {
+    cost  =  16000
+    area = engineering
+    weight = 200
+    tier = 4
+    category  =  {  industry  }
+    prerequisites = { "tech_empire_of_rangers_1" }
+    potential = {
+        AND = {
+            has_origin = origin_empire_of_rangers
+
+        }
+    }
+}
+
+
+tech_ancient_dron_struct1_1 = {
+    cost = 10000
+    area = Society
+    weight = 200
+    tier = 4
+    category  =  {  Archaeostudies  }
+    potential = {
+        AND = {
+            has_country_flag = achTech1
+        }
+    }
+}
+
+tech_ancient_dron_struct1_2 = {
+    cost = 10000
+    area = Society
+    weight = 200
+    tier = 4
+    category  =  {  Archaeostudies  }
+    potential = {
+        AND = {
+            has_country_flag = achTech1
+        }
+    }
+}
+
+tech_ancient_dron_struct1_3 = {
+    cost = 10000
+    area = Society
+    weight = 200
+    tier = 4
+    category  =  {  Archaeostudies  }
+    potential = {
+        AND = {
+            has_country_flag = achTech1
+        }
+    }
+}
+
+tech_ancient_dron_struct1_4 = {
+    cost = 10000
+    area = Society
+    weight = 200
+    tier = 4
+    category  =  {  Archaeostudies  }
+    potential = {
+        AND = {
+            has_country_flag = achTech1
+        }
+    }
+}
+
+tech_ancient_dron_struct1_4 = {
+    cost = 10000
+    area = Society
+    weight = 200
+    tier = 4
+    category  =  {  Archaeostudies  }
+    potential = {
+        AND = {
+            has_country_flag = achTech1
+        }
+    }
+}
+
+Ancient_Stalwart_Corvette = {
+    cost = 10000
+    area = Physics
+    weight = 200
+    tier = 4
+    category  =  {  computing  }
+    potential = {
+        AND = {
+            has_country_flag = ancCor1
+        }
+    }
+}
+
+Ancient_Titan_Upgraded = {
+    cost = 26000
+    area = Physics
+    weight = 200
+    tier = 5
+    category  =  {  computing  }
+    potential = {
+        AND = {
+            has_country_flag = ancTit1
+        }
+    }
+}
+
+ANCIENT_REWORK_REACTOR_BOOSTER = {
+    cost = 16000
+    area = Physics
+    weight = 200
+    tier = 5
+    category  =  {  particles  }
+    potential = {
+        AND = {
+            has_country_flag = perfectStructures
+        }
+    }
+}

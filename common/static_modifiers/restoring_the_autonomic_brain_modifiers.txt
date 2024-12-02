@@ -1,0 +1,73 @@
+optimize_production_modifier = {
+    planet_pop_assembly_mult = 0.10
+    planet_pops_robotics_upkeep_mult = -0.10
+}
+
+improve_drone_conditions_modifier = {
+    planet_stability_add = 20
+    pop_amenities_usage_no_happiness_mult = -0.15
+}
+
+temporary_increase_in_contentment = {
+    planet_stability_add = 15
+    planet_amenities_add = 30
+}
+
+upDronWay1 = {
+    ROBOT_species_trait_picks_add = 3
+    ROBOT_species_trait_points_add = 3
+}
+
+upDronWay2 = {
+    empire_size_districts_mult = -0.25
+    empire_size_systems_mult = -0.25
+}
+
+
+stability1 = {
+    planet_pop_assembly_mult = 0.25
+}
+
+five_year_plan_science = {
+    country_physics_tech_research_speed = 0.6
+    country_engineering_tech_research_speed = 0.6
+    country_society_tech_research_speed = 0.6
+}
+
+techstarbase1 = {
+    starbase_defense_platform_capacity_add = 12
+    starbase_module_build_speed_mult = 0.5
+    starbase_building_build_speed_mult = 0.5
+    starbase_upgrade_speed_mult = 0.5
+}
+
+techmegafast1 = {
+    megastructures_habitat_cost_mult = -0.25
+    megastructures_gateways_cost_mult = -0.5
+    arc_furnace_limit_add = 2
+    ship_speed_mult = 0.10
+}
+
+techmegastr1 = {
+    megastructures_cost_mult = -0.1
+    megastructure_build_speed_mult = 0.2
+}
+
+preparation_for_perestroika_1 = {
+    shipclass_starbase_damage_mult = 0.5
+    shipclass_starbase_hull_mult = 0.5
+    shipclass_military_station_damage_mult = 0.5
+}
+
+preparation_for_perestroika_2 = {
+    country_unity_produces_mult = 0.6
+    planet_jobs_unity_produces_mult = 1
+    planetary_ascension_cost_mult = -0.35
+}
+
+preparation_for_perestroika_3 = {
+    planet_jobs_specialist_produces_mult = 0.25
+    planet_jobs_worker_produces_mult = 0.25
+    planet_jobs_alloys_produces_mult = 0.6
+    planet_jobs_produces_mult = 0.15
+}

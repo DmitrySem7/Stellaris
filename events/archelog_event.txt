@@ -1,0 +1,132 @@
+namespace = ach_event_rework
+
+event = {
+    id= ach_event_rework.1
+    archaeology = yes
+    title = development_of_deposits
+    desc = development_of_deposits
+    is_triggered_only = yes
+    option = {
+        name = development_of_deposits
+        custom_tooltip = development_of_deposits
+        hidden_effect = {
+            solar_system = {
+                every_system_planet = {
+                    if = {
+                        limit = {
+                            is_planet_class = pc_toxic
+                        }
+                        add_deposit = d_vast_unity_deposit
+                        add_deposit = d_minerals_3
+                        add_deposit = d_exotic_gases_2
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+event = {
+    id= ach_event_rework.2
+    archaeology = yes
+    title = development_of_deposits
+    desc = development_of_deposits
+    is_triggered_only = yes
+    option = {
+        name = development_of_deposits
+        custom_tooltip = development_of_deposits
+
+        hidden_effect = {
+            solar_system = {
+                every_system_planet = {
+                    if = {
+                        limit = {
+                            is_planet_class = pc_toxic
+                        }
+                        add_deposit = d_alloys_5
+                        add_deposit = d_vast_unity_deposit
+                    }
+                }
+            }
+        }
+    }
+}
+
+event = {
+    id= ach_event_rework.3
+    archaeology = yes
+    title = development_of_deposits
+    desc = development_of_deposits
+    is_triggered_only = yes
+    option = {
+        name = development_of_deposits
+        custom_tooltip = development_of_deposits
+
+        hidden_effect = {
+            solar_system = {
+                every_system_planet = {
+                    if = {
+                        limit = {
+                            is_planet_class = pc_toxic
+                        }
+                        add_deposit = d_vast_unity_deposit
+                        add_deposit = d_minerals_10
+                    }
+                }
+            }
+        }
+    }
+}
+
+event = {
+    id= ach_event_rework.4
+    archaeology = yes
+    title = development_of_deposits
+    desc = development_of_deposits
+    is_triggered_only = yes
+    option = {
+        name = development_of_deposits
+        custom_tooltip = development_of_deposits
+
+        hidden_effect = {
+            solar_system = {
+                every_system_planet = {
+                    if = {
+                        limit = {
+                            is_planet_class = pc_toxic
+                        }
+                        add_deposit = d_energy_5
+                        add_deposit = d_minerals_5
+                    }
+                }
+            }
+        }
+    }
+}
+
+event = {
+    id= ach_event_rework.5
+    archaeology = yes
+    title = development_of_deposits
+    desc = development_of_deposits
+    is_triggered_only = yes
+    option = {
+        name = development_of_deposits
+        custom_tooltip = development_of_deposits
+
+        hidden_effect = {
+            solar_system = {
+                every_system_planet = {
+                    if = {
+                        limit = {
+                            is_planet_class = pc_toxic
+                        }
+                        add_deposit = d_society_6
+                        add_deposit = d_vast_unity_deposit
+                    }
+                }
+            }
+        }
+    }
+}

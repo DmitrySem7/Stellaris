@@ -1,0 +1,108 @@
+namespace = special_planet_event
+
+
+
+planet_event  = {
+    id = special_planet_event.1
+    is_triggered_only  = yes
+    hide_window  = yes
+    pre_triggers = {
+        has_owner = yes
+    }
+    trigger = {
+        owner = {
+            has_origin = origin_fragment_of_civilization
+        }
+
+    }
+    immediate = {
+        #remove_all_districts = yes
+        #set_planet_size = 35
+        #create_archaeological_site = site_krazura_dig
+        #create_archaeological_site = site_green_skies
+        #add_anomaly = SEA_CRYSTAL_CAT
+        #minor_artifacts = 1 d_artifacts_research_1
+        solar_system = {
+            every_system_planet = {
+                if = {
+                    limit = {
+                        is_planet_class = pc_gray_goo
+                    }
+                    add_deposit = d_nano_rework_deposit_3
+                }
+                if = {
+                    limit = {
+                        is_planet_class = pc_rift_star
+                    }
+                    add_deposit = d_astral_threads_deposit_2
+                }
+                set_planet_flag = starting_mining_target
+                set_planet_flag = starting_deposit
+                add_deposit = d_energy_2
+                #every_moon = {}
+            }
+        }
+        while = {
+            count = 4
+            add_deposit = d_worm_mine
+            add_deposit = d_worm_farm
+            add_deposit = d_junk_hollows
+        }
+
+        # make changes to the capital planet here, you can scope to the solar system like this: solar_system = { <code here> }
+        #change_planet_size = 40
+        #set_planet_size = 40
+        #change_pc = { class = pc_gray_goo inherit_entity = yes }
+        #set_capital = yes
+        #add_deposit = d_mineral_fields
+        #add_deposit = d_prosperous_mesa
+        #add_deposit = d_submerged_ore_veins
+        #generate_start_deposits_and_blockers = yes
+
+    }
+}
+
+
+planet_event  = {
+    id = special_planet_event.2
+    is_triggered_only  = yes
+    hide_window  = yes
+    pre_triggers = {
+        has_owner = yes
+    }
+    trigger = {
+        owner = {
+            has_origin = civic_restoring_the_autonomic_brain
+        }
+    }
+
+    immediate = {
+        solar_system = {
+            every_system_planet = {
+                remove_all_districts = yes
+            }
+        }
+    }
+}
+
+event = {
+    id = special_planet_event.0
+    is_triggered_only  = yes
+    hide_window  = yes
+
+    trigger = {
+        owner = {
+            has_origin = civic_restoring_the_autonomic_brain
+        }
+    }
+
+    immediate = {
+        capital_scope = {
+            enable_special_project = {
+                name = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN"
+                location = this
+                owner = root
+            }
+        }
+    }
+}

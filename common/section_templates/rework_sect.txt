@@ -1,0 +1,198 @@
+ship_section_template = {
+    key = "CORVETTE_MID_S8"
+    ship_size = corvette
+    fits_on_slot = mid
+    should_draw_components = yes
+    entity = "corvette_S3_entity"
+    icon = "GFX_ship_part_core_mid"
+    ai_tags = { gunship artillery brawler brawler_stealth }
+
+    component_slot = {
+        name = "SMALL_GUN_01"
+        template = "small_turret"
+        locatorname = "small_gun_01"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_02"
+        template = "small_turret"
+        locatorname = "small_gun_02"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_03"
+        template = "small_turret"
+        locatorname = "small_gun_03"
+    }
+
+    component_slot = {
+        name = "SMALL_GUN_04"
+        template = "small_turret"
+        locatorname = "small_gun_01"
+    }
+
+    small_utility_slots = 4
+    aux_utility_slots = 3
+
+    ai_weight = {
+        modifier = {
+            factor = 10.0
+            OR = {
+                is_preferred_weapons = weapon_type_kinetic
+                is_preferred_weapons = weapon_type_energy
+            }
+        }
+        modifier = {
+            factor = 0.1
+            NOR = {
+                is_preferred_weapons = weapon_type_kinetic
+                is_preferred_weapons = weapon_type_energy
+            }
+        }
+    }
+    prerequisites = { Ancient_Stalwart_Corvette }
+    resources = {
+        category = ship_sections
+        cost = {
+            alloys = 30
+            minor_artifacts = 7
+        }
+    }
+}
+
+
+ship_section_template = {
+    key = "ANCIENT_TITAN_BOW"
+    prerequisites = { Ancient_Titan_Upgraded }
+    ship_size = titan
+    fits_on_slot = bow
+    should_draw_components = yes
+    entity = "titan_bow_entity"
+    icon = "GFX_ship_part_core_bow"
+    ai_tags = { artillery gunship }
+
+    ai_weight = {
+        modifier = {
+            factor = 10.0
+            NOT = { is_preferred_weapons = weapon_type_explosive }
+        }
+        modifier = {
+            factor = 0.1
+            is_preferred_weapons = weapon_type_explosive
+        }
+    }
+
+    component_slot = {
+        name = "TITANIC_01"
+        template = "invisible_titanic_fixed"
+        locatorname = "xl_gun_01"
+    }
+    component_slot = {
+        name = "TITANIC_02"
+        template = "invisible_titanic_fixed"
+        locatorname = "xl_gun_02"
+    }
+    component_slot = {
+        name = "TITANIC_03"
+        template = "invisible_titanic_fixed"
+        locatorname = "xl_gun_03"
+    }
+    component_slot = {
+        name = "TITANIC_04"
+        template = "invisible_titanic_fixed"
+        locatorname = "xl_gun_04"
+    }
+
+    large_utility_slots = 8
+
+    resources = {
+        category = ship_sections
+        cost = {
+            alloys = 160
+            sr_dark_matter = 5
+            minor_artifacts = 10
+        }
+    }
+}
+
+ship_section_template = {
+    key = "ANCIENT_TITAN_MID"
+    ship_size = titan
+    fits_on_slot = mid
+    should_draw_components = yes
+    entity = "titan_mid_entity"
+    icon = "GFX_ship_part_core_mid"
+    ai_tags = { artillery gunship }
+    prerequisites = { Ancient_Titan_Upgraded }
+
+    component_slot = {
+        name = "LARGE_GUN_01"
+        template = "large_turret"
+        locatorname = "large_gun_01"
+    }
+    component_slot = {
+        name = "LARGE_GUN_02"
+        template = "large_turret"
+        locatorname = "large_gun_02"
+    }
+    component_slot = {
+        name = "LARGE_GUN_03"
+        template = "large_turret"
+        locatorname = "large_gun_03"
+    }
+    component_slot = {
+        name = "LARGE_GUN_04"
+        template = "large_turret"
+        locatorname = "large_gun_04"
+    }
+    component_slot = {
+        name = "TITANIC_01"
+        template = "invisible_titanic_fixed"
+        locatorname = "xl_gun_01"
+    }
+
+    large_utility_slots = 12
+    aux_utility_slots = 5
+
+    resources = {
+        category = ship_sections
+        cost = {
+            alloys = 320
+            sr_dark_matter = 8
+            minor_artifacts = 10
+        }
+    }
+}
+
+ship_section_template = {
+    key = "ANCIENT_TITAN_STERN"
+    ship_size = titan
+    fits_on_slot = stern
+    should_draw_components = yes
+    entity = "titan_stern_entity"
+    icon = "GFX_ship_part_core_stern"
+    ai_tags = { artillery gunship }
+    prerequisites = { Ancient_Titan_Upgraded }
+
+    component_slot = {
+        name = "TITANIC_01"
+        template = "invisible_titanic_fixed"
+        locatorname = "xl_gun_01"
+    }
+    component_slot = {
+        name = "TITANIC_02"
+        template = "invisible_titanic_fixed"
+        locatorname = "xl_gun_02"
+    }
+
+    aux_utility_slots = 8
+
+    resources = {
+        category = ship_sections
+        cost = {
+            alloys = 320
+            sr_dark_matter = 5
+            minor_artifacts = 5
+        }
+    }
+}

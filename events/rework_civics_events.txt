@@ -1,0 +1,43 @@
+namespace = rework_civics
+
+event = {
+    id = rework_civics.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_country = {
+            if = {
+                limit = {
+                    AND = {
+                        has_trait = "rework_slaves"
+                        NOT = { has_modifier = rework_modifier_slaves }
+                    }
+                }
+                add_modifier = {
+                    modifier = rework_modifier_slaves
+                    days = -1
+                }
+            }
+        }
+    }
+}
+
+event = {
+    id = rework_civics.2
+    hide_window = yes
+    is_triggered_only = yes
+    immediate = {
+        every_country = {
+            if = {
+                limit = {
+                    AND = {
+                        has_trait = "rework_slaves"
+                        NOT = { has_trait = rework_slaves }
+                    }
+                }
+                remove_modifier = rework_modifier_slaves
+            }
+        }
+    }
+}

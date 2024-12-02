@@ -1,0 +1,23 @@
+rework_slaves = {
+    cost = 4
+    initial = yes
+    randomized = no
+    advanced_trait = no
+    species_possible_remove = {
+        can_remove_beneficial_genetic_traits = yes
+    }
+    species_possible_merge_remove = {
+        always = yes
+    }
+    potential_crossbreeding_chance = 0
+    allowed_archetypes = { BIOLOGICAL LITHOID ROBOT MACHINE }
+    modifier = {
+        planet_jobs_slave_produces_mult = 0.40
+    }
+    slave_cost = {
+        energy = 500
+    }
+    ai_weight = {
+        weight = 0
+    }
+}

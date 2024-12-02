@@ -1,0 +1,7 @@
+
+empire_init_capital_planet = {
+    events = {
+        special_planet_event.1
+        special_planet_event.2
+    }
+}

@@ -1,0 +1,78 @@
+
+
+origin_empire_of_rangers = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/empire_of_rangers.dds"
+    picture = GFX_origin_empire_of_rangers
+
+    playable = {
+        host_has_dlc = Federations
+    }
+
+    potential = {
+        always = yes
+    }
+
+    #description = origin_no_effect
+    flags = { custom_start_screen }
+    advanced_start = yes
+
+    random_weight = {
+        base = 0
+    }
+}
+
+origin_fragment_of_civilization = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origin_fragment_of_civilization.dds"
+    picture = GFX_origin_fragment_of_civilization
+
+    starting_colony = pc_relic2 #Changes homeworld class regardless of what is picked for empire
+    initializers = { ancient_fragment_system }
+    max_once_global = yes
+    advanced_start = yes
+
+    flags = { custom_start_screen }
+
+    potential = {
+        always = yes
+    }
+
+    random_weight = {
+        base = 0
+    }
+
+    non_colonizable_planet_class_neighbor = yes
+
+    modifier = {
+        country_astral_threads_produces_mult = 1
+        country_astral_rift_speed_mult = 0.2
+        science_ship_survey_speed = 0.2
+        ship_anomaly_generation_chance_mult = 0.15
+        country_resource_max_astral_threads_add = 500
+        country_specimen_selling_cost_mult = 1.0
+        planet_stability_add = -10
+    }
+}
+
+civic_restoring_the_autonomic_brain = {
+    is_origin = yes
+    icon = "gfx/interface/icons/origins/origin_fragment_of_civilization.dds"
+    picture = GFX_origin_empire_of_rangers
+
+    starting_colony = pc_ancient_drons_rework #Changes homeworld class regardless of what is picked for empire
+    initializers = { ancient_drons_rework_system }
+    max_once_global = yes
+    advanced_start = yes
+
+    flags = { custom_start_screen }
+    non_colonizable_planet_class_neighbor = yes
+
+    potential = {
+        always = yes
+    }
+
+    random_weight = {
+        base = 0
+    }
+}

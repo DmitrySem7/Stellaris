@@ -1,0 +1,11 @@
+d_nano_rework_deposit_3 = {
+    resources = {
+        category = orbital_research_deposits
+        produces = {
+            nanites = 3
+        }
+    }
+    station = shipclass_research_station
+    is_for_colonizable = no
+    drop_weight = { weight = 0 }
+}

@@ -1,0 +1,132 @@
+
+ancient_fragment_system = {
+    flags = { empire_home_system}
+    usage = origin
+    class = sc_rift_star
+
+    planet = {
+        size = { min = 40 max = 40 }
+        class = pc_rift_star
+        orbit_angle = 0
+        orbit_distance = 0
+
+    }
+    #init_effect = { generate_home_system_resources = yes }
+    planet = {
+        class = pc_relic2
+        orbit_angle = 40
+        orbit_distance = 210
+        starting_planet = yes
+
+        init_effect = {
+            add_modifier = { modifier = living_sea years = -1 }
+            prevent_anomaly = yes
+        }
+    }
+
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 100
+    }
+
+    planet = {
+        class = pc_gray_goo
+        orbit_distance = 30
+        orbit_angle = 1
+        size = { min = 20 max = 30 }
+        has_ring = no
+        init_effect = {
+        }
+    }
+
+    planet = {
+        class = pc_relic
+        orbit_distance = 30
+        orbit_angle = 10
+        init_effect = {
+           # prevent_anomaly = yes
+           # clear_deposits = yes
+           # while = { count = 2 random_list = { 1 = { add_deposit = d_segment_rubble_1 } 1 = { add_deposit = d_segment_rubble_1_small } 1 = { add_deposit = d_segment_rubble_2 } 1 = { add_deposit = d_segment_rubble_3 } 1 = { add_deposit = d_segment_rubble_4 } } }
+        }
+
+        moon = {
+            count = { min = 8 max = 8 }
+            orbit_angle = { min = 10 max = 270 }
+            orbit_distance = 10
+
+            init_effect = {
+                prevent_anomaly = yes
+                clear_deposits = yes
+                add_deposit = d_minerals_8
+            }
+        }
+    }
+}
+
+ancient_drons_rework_system = {
+    flags = { empire_home_system}
+    usage = origin
+    class = sc_pulsar
+
+    planet = {
+        size = { min = 14 max = 14 }
+        class = star
+        orbit_angle = 0
+        orbit_distance = 0
+        init_effect = {
+            clear_deposits = yes
+        }
+    }
+
+    planet = {
+        class = pc_ancient_drons_rework
+        orbit_angle = 20
+        orbit_distance = 30
+        starting_planet = yes
+        init_effect = {
+            clear_deposits = yes
+        }
+    }
+
+
+    planet = {
+        class = pc_ancient_drons_rework
+        size = 20
+        orbit_angle = 60
+        orbit_distance = 180
+        init_effect = {
+            clear_deposits = yes
+        }
+    }
+
+
+    planet = {
+        class = pc_ancient_drons_rework
+        size = 20
+        orbit_angle = 80
+        orbit_distance = 70
+        init_effect = {
+            clear_deposits = yes
+        }
+    }
+
+    planet = {
+        class = pc_toxic
+        size = 10
+        orbit_angle = 110
+        orbit_distance = 270
+        init_effect = {
+            clear_deposits = yes
+        }
+    }
+
+    planet = {
+        class = pc_toxic
+        size = 10
+        orbit_angle = 130
+        orbit_distance = 30
+        init_effect = {
+            clear_deposits = yes
+        }
+    }
+}

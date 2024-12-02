@@ -1,0 +1,33 @@
+strengthening_the_soldiers_rework = {
+    length = @campaignDuration
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = edicts
+        cost = {
+            unity = 55
+            consumer_goods = 20
+            multiplier = value:edict_size_effect
+        }
+
+        upkeep = {
+            unity = 55
+            consumer_goods = 20
+            multiplier = value:edict_size_effect
+        }
+    }
+
+    potential = {
+        has_valid_civic = civic_police_state_2
+    }
+
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 1
+            has_edict = healthcare_campaign
+        }
+    }
+}
+
+

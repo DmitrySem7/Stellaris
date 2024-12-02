@@ -1,0 +1,382 @@
+
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN"
+    days_to_research = 1
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.1 }
+        }
+    }
+}
+
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_2"
+    cost = 560
+    tech_department = physics_technology
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.2 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_3"
+    cost = 560
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.3 }
+        }
+    }
+}
+
+
+special_project = {
+    key = "exploration_of_hidden_deposits_toxic"
+    cost = 860
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.4 }
+        }
+    }
+}
+
+special_project = {
+    key = "exploration_of_hidden_deposits_toxic"
+    cost = 860
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.4 }
+        }
+    }
+}
+
+special_project = {
+    key = "temporary_increase_in_contentment"
+    days_to_research = 1
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.5 }
+        }
+    }
+}
+
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_4"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.6 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_5"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.7 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_6"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.8 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_7"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.9 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_8"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.10 }
+        }
+    }
+}
+
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_9"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.11 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_10"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.12 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_11"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.13 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_12"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.14 }
+        }
+    }
+}
+
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_13"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.15 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_14"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.16 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_15"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.17 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_16"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.18 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_17"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.19 }
+        }
+    }
+}
+
+special_project = {
+    key = "preparation_for_perestroika"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.20 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_18"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.21 }
+        }
+    }
+}
+
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_19"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.22 }
+        }
+    }
+}
+
+special_project = {
+    key = "dasfwefq4141dqs51"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.24 }
+        }
+    }
+}
+
+special_project = {
+    key = "CIVIL_RESTORING_THE_AUTONOMIC_BRAIN_20"
+    cost = 1350
+    timelimit = -1
+    picture = GFX_evt_space_walk
+    icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+    tech_department = engineering_technology
+    event_scope = planet_event
+    on_success = {
+        owner = {
+            country_event = { id = restoring_the_autonomic_brain_events.23 }
+        }
+    }
+}

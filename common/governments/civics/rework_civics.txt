@@ -1,0 +1,169 @@
+civic_criminal_rework = {
+    modification = no
+    potential = {
+        OR = {
+            authority = { value = auth_corporate }
+            civics = { value = civic_galactic_sovereign_megacorp }
+        }
+    }
+    random_weight = {
+        base = @civic_default_random_weight
+        modifier = {
+            factor = 0
+            blocks_disruptive_gameplay = yes
+        }
+    }
+    modifier = {
+        planet_branch_offices_cost_mult = -0.60
+        spy_network_daily_value_mult = 0.60
+        intel_decryption_add = 2
+    }
+
+    description = "civic_criminal_rework_desc"
+
+    swap_type = {
+        trigger = {
+            has_first_contact_dlc = yes
+        }
+        description = "civic_criminal_rework_desc2"
+        modifier = {
+            ship_cloaking_strength_add = 1
+        }
+    }
+}
+
+civic_holder_rework = {
+    modification = no
+
+    potential = {
+        OR = {
+            authority = { value = auth_corporate }
+            civics = { value = civic_galactic_sovereign_megacorp }
+        }
+    }
+    random_weight = { base = @civic_default_random_weight }
+    ai_weight = {
+        base = @ai_civic_default_base_weight
+        modifier = {
+            factor = @ai_civic_personality_match_factor
+            OR = {
+                has_ai_personality = ruthless_capitalists
+                has_ai_personality = hegemonic_imperialists
+                has_ai_personality = slaving_despots
+                has_ai_personality = federation_builders
+                has_ai_personality = fanatic_befrienders
+            }
+        }
+        modifier = {
+            factor = @ai_civic_personality_mismatch_factor
+            OR = {
+                has_ai_personality = xenophobic_isolationists
+            }
+        }
+    }
+    description = "civic_holder_rework_effects"
+    modifier = {
+        divided_patrongage_max_subjects = 1
+    }
+    swap_type = {
+        description = "civic_holder_rework_effects"
+        trigger = {
+            host_has_dlc = "Overlord"
+        }
+        modifier = {
+            planet_max_subject_holding_buildings_add = 1
+
+        }
+    }
+}
+
+
+civic_achive_inst_power = {
+    playable = { has_grand_archive_dlc = yes }
+    ai_playable = { has_grand_archive_dlc = yes }
+    description = "civic_achive_inst_power_effects"
+    potential = {
+        civics = {
+            NOT = {
+                value = civic_corporate_galactic_curators
+                value = civic_galactic_curators
+            }
+        }
+    }
+
+    modification = no
+
+    random_weight = {
+        base = @civic_rare_random_weight
+    }
+    ai_weight = {
+        base = @civic_rare_random_weight
+    }
+
+    modifier = {
+        planet_jobs_unity_produces_mult = -0.3
+        ship_anomaly_generation_chance_mult = 0.35
+        specimens_produces_mult = 3
+    }
+}
+
+
+civic_police_state_2 = {
+    modification = no
+    potential = {
+        ethics = { NOT = { value = ethic_gestalt_consciousness } }
+        authority = { NOT = { value = auth_corporate } }
+    }
+    random_weight = {
+        base = @civic_default_random_weight
+        modifier = {
+            factor = 0
+            blocks_disruptive_gameplay = yes
+        }
+    }
+    modifier = {
+        councilor_skill_add = 1
+        planet_soldiers_unity_produces_add = 4
+    }
+}
+
+civic_fauna_hunters = {
+    random_weight = {
+        base = @civic_rare_random_weight
+    }
+    ai_weight = {
+        base = @civic_rare_random_weight
+    }
+    modifier = {
+        space_fauna_culling_reward_mult = 1.20
+    }
+}
+
+civic_fauna_fleet_stability = {
+    random_weight = {
+        base = @civic_rare_random_weight
+    }
+    ai_weight = {
+        base = @civic_rare_random_weight
+    }
+    modifier = {
+        space_fauna_ship_armor_mult = 0.20
+        space_fauna_growth_rate_mult = 0.15
+        space_fauna_ship_damage_mult = 0.05
+        mutation_slots_add = 1
+    }
+}
+
+civic_space_station_defense = {
+    random_weight = {
+        base = @civic_rare_random_weight
+    }
+    ai_weight = {
+        base = @civic_rare_random_weight
+    }
+    modifier = {
+        country_starbase_capacity_add = 3
+        starbase_shipyard_build_cost_mult = -0.15
+        starbase_defense_platform_capacity_add = 8
+    }
+}

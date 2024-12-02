@@ -1,0 +1,47 @@
+ rework_restoring_the_autonomic_brain1 = {
+     desc = "restoring_the_autonomic_brain1"
+     picture = GFX_evt_barren_dig_site
+     stages = 5
+     allow = {
+         is_ship_class = shipclass_science_ship
+         exists = leader
+     }
+     max_instances = 999
+     visible = { default_site_visible_trigger = yes }
+
+     stage = {
+         difficulty = 2
+         event = ach_event_rework.1
+         icon = GFX_archaeology_runes_B1
+     }
+
+     stage = {
+         difficulty = 2
+         event = ach_event_rework.2
+         icon = GFX_archaeology_runes_B1
+     }
+
+     stage = {
+         difficulty = 2
+         event = ach_event_rework.3
+         icon = GFX_archaeology_runes_B2
+     }
+
+     stage = {
+         difficulty = 2
+         event = ach_event_rework.4
+         icon = GFX_archaeology_runes_B2
+     }
+
+     stage = {
+         difficulty = 2
+         event = ach_event_rework.5
+         icon = GFX_archaeology_runes_B2
+     }
+
+     on_roll_failed = {
+         from = {
+             standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+         }
+     }
+ }
